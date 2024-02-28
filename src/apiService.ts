@@ -15,7 +15,7 @@ const commonHeaders = {
 const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://api.valantis.store:40000/",
+    baseUrl: "https://api.valantis.store:41000/",
   }),
 
   endpoints: (builder) => ({

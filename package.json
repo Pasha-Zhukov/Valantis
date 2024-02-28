@@ -1,7 +1,7 @@
 {
   "name": "testtaskvalantis",
   "private": true,
-  "homepage": "http://Pasha-Zhukov.github.io/Valantis/",
+  "homepage": "https://Pasha-Zhukov.github.io/Valantis/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -m 'Automatically update gh-pages [skip ci]'"
+    "deploy": "gh-pages -d dist -m 'Automatically update gh-pages [skip ci]'"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",

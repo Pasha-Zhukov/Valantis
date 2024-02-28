@@ -43,10 +43,12 @@ function Products({
 
   return (
     <div className="container">
-      <FormSelectFilter
-        onChangeTypeFields={onChangeTypeFields}
-        fields={fields}
-      />
+      {uniqueProducts && (
+        <FormSelectFilter
+          onChangeTypeFields={onChangeTypeFields}
+          fields={fields}
+        />
+      )}
       {isFetchingGet_fieldsFilterSub && <Loader />}
       {fieldsFilter && isFilter && (
         <FormSelectSubFilter
@@ -61,7 +63,7 @@ function Products({
       ) : (
         <>
           <TableProducts uniqueProducts={uniqueProducts} />
-          {!isFilter && (
+          {!isFilter && uniqueProducts && (
             <div className="d-flex justify-content-center">
               <Pagination>
                 <Pagination.Prev

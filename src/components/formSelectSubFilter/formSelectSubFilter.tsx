@@ -17,9 +17,9 @@ function formSelectSubFilter({
         disabled={isFetching}
         aria-label="Default select example"
         onChange={onChangeTypeFalter}
-        className="d-flex w-100  p-3 rounded-3 mt-3 fs-5 w-100 "
+        className="d-flex w-100  p-3 rounded-3 mt-3 w-100 "
       >
-        <option value={-1}>Выберите тип поля</option>
+        <option value={-1}>Выберите поле</option>
         {fieldsFilterCurrent
           ?.toSorted()
           .sort((a: any, b: any) => a - b)

@@ -14,7 +14,7 @@ function FormSelectFilter({
       <Form.Select
         aria-label="Default select example"
         onChange={onChangeTypeFields}
-        className="d-flex w-100  p-3 rounded-3 mt-3 fs-5"
+        className="d-flex w-100  p-3 rounded-3 mt-3 "
       >
         <option value={-1}>Весь ассортимент</option>
         {fields?.map((item) => (
